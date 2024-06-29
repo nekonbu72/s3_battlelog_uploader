@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      API_KEY: "IIQYBqd-04ClqbR3DfLnSolHAlKL-TcZS7aV8eixCJs"
+      API_KEY: ${{ secrets.API_KEY }}
       ACC_LOC: ${{ secrets.ACC_LOC }}
       GTOKEN: ${{ secrets.GTOKEN }}
       BULLETTOKEN: ${{ secrets.BULLETTOKEN }}
