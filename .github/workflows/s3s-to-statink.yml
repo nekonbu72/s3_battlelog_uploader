@@ -32,7 +32,7 @@ jobs:
       - name: Generate config.txt
         working-directory: s3s
         run: |
-          echo '{"api_key": "${{ env.API_KEY }}", "acc_loc": "${{ env.ACC_LOC }}", "gtoken": "${{ env.GTOKEN }}", "bullettoken": "test", "session_token": "test", "f_gen": "https://api.imink.app/f"}' > config.txt
+          echo '{"api_key": "${{ env.API_KEY }}", "acc_loc": "${{ env.ACC_LOC }}", "gtoken": "test", "bullettoken": "${{ env.BULLETTOKEN }}", "session_token": "test", "f_gen": "https://api.imink.app/f"}' > config.txt
           cat config.txt
           
       - name: Install s3s requirements
