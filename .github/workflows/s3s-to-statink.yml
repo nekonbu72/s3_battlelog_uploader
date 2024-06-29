@@ -34,7 +34,6 @@ jobs:
         run: |
           echo '{"api_key": "${{ env.API_KEY }}", "acc_loc": "${{ env.ACC_LOC }}", "gtoken": "${{ env.GTOKEN }}", "bullettoken": "${{ env.BULLETTOKEN }}", "session_token": "${{ env.SESSION_TOKEN }}", "f_gen": "${{ env.F_GEN }}" }' > config.txt
           echo ${{ env.API_KEY }}
-          echo "test"
           cat config.txt
           
       - name: Install s3s requirements
